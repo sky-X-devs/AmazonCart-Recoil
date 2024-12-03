@@ -1,0 +1,55 @@
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;   
+}
+.WishlistContainer{
+    display: flex;
+}
+.privateWishlist{
+    padding: 0 2%;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.publicWishlist{
+    padding-left: 2%;
+    
+}
+.vl {
+    border-left: 1px solid rgb(186, 187, 186);
+    height: 89vh;
+  }
+.item-container{
+    position: relative;
+    display: flex;
+    flex:wrap;
+    margin: 0 5px;
+    padding: 1% ;
+    border: solid 1px;
+    border-radius: 4px;
+
+}
+
+.item-container p {
+    font-weight: 500;
+    display: flex;
+    
+}
+
+.item-container img { 
+   padding: 0 25% 0;
+    max-width: 50%;
+    max-height: 50%;
+}
+.items{
+    display:block;
+    position: relative;
+}
+.addToCart{
+    cursor: pointer;
+    background-color: yellow;
+    border: transparent;
+    padding: 2% 30%;
+    border-radius: 4px;
+    justify-content: center;
+}
