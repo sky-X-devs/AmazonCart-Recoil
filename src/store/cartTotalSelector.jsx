@@ -20,5 +20,5 @@ import { cartItemsState } from "./cartItemsState";
 
         return {totalAmount,totalQantity};
     }
-})
+})  
 export default cartTotalSelector;

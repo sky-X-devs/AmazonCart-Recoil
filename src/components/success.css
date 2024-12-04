@@ -1,0 +1,22 @@
+.close-button {
+    padding: 10px 30%;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .close-button:hover {
+    background-color: darkblue;
+    cursor: pointer;
+  }
+  .ptb-button{
+    background-color: #daba43;
+    padding: 4px 30px;
+    font-size: 20px;
+  }
+  .ptb-button:hover{
+    background-color: darkgoldenrod;
+  }

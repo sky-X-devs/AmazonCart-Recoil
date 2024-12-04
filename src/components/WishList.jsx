@@ -3,9 +3,8 @@
     import { wishItemsState } from "../store/wishItemsState";
     import '../wishlist.css';
     import { cartItemsState } from "../store/cartItemsState";
-    import { useEffect } from "react";
-
-    export default function Wishlist (){
+    
+    function Wishlist (){
         const WishListItems = useRecoilValue(wishItemsState);
         const [cartItems , setcartItems ] = useRecoilState(cartItemsState);
 
@@ -20,7 +19,8 @@
                 }
                 return[...prevCartItem,{...item,quantity:1}]
         });
-    }
+     }
+    
 
         return (
             <div className="WishlistContainer">
@@ -47,5 +47,6 @@
                 </div>
             </div>
         );
-        
     }
+
+    export default Wishlist;

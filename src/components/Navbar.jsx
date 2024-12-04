@@ -1,28 +1,28 @@
-import React from "react"
+import React from "react";
+import { Link } from 'react-router-dom';
 import shoppingCart from '../assets/shopping-cart.png';
-import Wishlist from "./WishList";
-import { RecoilRoot } from "recoil";
-import AmazonCart from "./AmazonCart";
+import './NavigationBar.css';
 
-function NavigationBar(){
-
-    return(
-        <div>
-            <div style={{backgroundColor:"gray",display:"flex",justifyContent:"space-between"}}>
-                <h1><a style={{textDecoration:"none",color:"black"}} href="/">amazon.in</a></h1>
-                <div style={{display:"flex"}}>
-                    <h1>Hello,User</h1>
-                    <a href="/" ><img src={shoppingCart}
-                    style={{height:"60px",width:"70px",padding:"0 10px",paddingTop:"5px"}} alt="shopping" /></a>     
-                </div>
+function NavigationBar() {
+    return (
+        <div className="navbar">
+            <h1>
+                <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+                    amazon.in
+                </Link>
+            </h1>
+            <div style={{ display: "flex" }}>
+                <h1>Hello, User</h1>
+                <Link to="amazon/cart">   
+                    <img
+                        src={shoppingCart}
+                        className="cart-icon"
+                        alt="shopping"
+                    />
+                </Link>
             </div>
-            <RecoilRoot>
-                <Wishlist/>    
-                <AmazonCart/>
-            </RecoilRoot>
-            
         </div>
-
-    )
+    );
 }
+
 export default NavigationBar;
